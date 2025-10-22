@@ -1,0 +1,262 @@
+/* Contact Page Specific Styles */
+
+/* Contact Form Enhancements */
+.contact-form {
+  background: var(--light-grey);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-control,
+.contact-form .form-select {
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  padding: 12px 15px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+  border-color: var(--yellow);
+  box-shadow: 0 0 0 0.2rem rgba(247, 190, 39, 0.25);
+}
+
+.contact-form .form-label {
+  font-weight: 600;
+  color: var(--light-black);
+  margin-bottom: 8px;
+}
+
+/* Contact Info Cards */
+.contact-info-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.contact-info-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.contact-info-card .card-body {
+  padding: 2rem;
+}
+
+.contact-info-card i {
+  transition: transform 0.3s ease;
+}
+
+.contact-info-card:hover i {
+  transform: scale(1.1);
+}
+
+/* Contact Hero Section */
+.contact-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../assets/footer/banner-1.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 170px;
+  padding-bottom: 90px;
+}
+
+/* Map Section */
+.map-container {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.map-placeholder {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border: 2px dashed #dee2e6;
+  transition: all 0.3s ease;
+}
+
+.map-placeholder:hover {
+  border-color: var(--yellow);
+  background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+}
+
+/* Social Media Buttons */
+.social-btn {
+  transition: all 0.3s ease;
+  border: 2px solid var(--bg-coffee) !important;
+  color: var(--bg-coffee) !important;
+  background: transparent !important;
+}
+
+.social-btn:hover {
+  background: var(--bg-coffee) !important;
+  color: white !important;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(100, 47, 33, 0.3);
+}
+
+/* Form Submit Button */
+.contact-submit-btn {
+  background: var(--yellow);
+  color: var(--bg-coffee);
+  border: none;
+  padding: 15px 40px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-submit-btn:hover {
+  background: var(--bg-coffee);
+  color: var(--yellow);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(100, 47, 33, 0.3);
+}
+
+/* Contact Alert */
+.contact-alert {
+  border-radius: 10px;
+  border: none;
+  padding: 1rem 1.5rem;
+  font-weight: 500;
+}
+
+/* Contact Section Spacing */
+.contact-section {
+  padding: 80px 0;
+}
+
+.contact-section .section-title {
+  margin-bottom: 3rem;
+}
+
+/* Contact Info Icons */
+.contact-icon {
+  width: 80px;
+  height: 80px;
+  background: var(--light-grey);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.contact-icon i {
+  font-size: 2rem;
+  color: var(--yellow);
+}
+
+.contact-info-card:hover .contact-icon {
+  background: var(--yellow);
+}
+
+.contact-info-card:hover .contact-icon i {
+  color: var(--bg-coffee);
+}
+
+/* Responsive Design for Contact */
+@media (max-width: 992px) {
+  .contact-hero {
+    padding-top: 130px;
+    padding-bottom: 60px;
+    background-attachment: scroll;
+  }
+
+  .contact-form {
+    padding: 1.5rem;
+  }
+
+  .contact-info-card .card-body {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-hero {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  .contact-form {
+    padding: 1rem;
+  }
+
+  .contact-info-card .card-body {
+    padding: 1rem;
+  }
+
+  .social-btn {
+    width: 50px !important;
+    height: 50px !important;
+    margin-bottom: 1rem;
+  }
+
+  .contact-submit-btn {
+    width: 100%;
+    padding: 12px 30px;
+  }
+}
+
+/* Animation for contact elements */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact-info-card,
+.contact-form {
+  animation: slideInUp 0.6s ease-out;
+}
+
+/* Form validation styles */
+.contact-form .is-invalid {
+  border-color: #dc3545;
+}
+
+.contact-form .is-valid {
+  border-color: #28a745;
+}
+
+/* Loading state for form */
+.form-loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.form-loading .contact-submit-btn {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Contact page specific spacing */
+.contact-spacing {
+  margin-bottom: 4rem;
+}
+
+/* Phone number styling */
+.calling {
+  color: var(--yellow) !important;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.calling:hover {
+  color: var(--bg-coffee) !important;
+  text-decoration: underline;
+}

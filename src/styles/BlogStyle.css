@@ -1,0 +1,220 @@
+/* Blog Specific Styles */
+
+/* Blog Page Enhancements */
+.blog-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../assets/blog/reviews.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 170px;
+  padding-bottom: 90px;
+}
+
+.blog-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none !important;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+}
+
+.blog-card .card-img-top {
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.blog-category-filter {
+  margin-bottom: 3rem;
+}
+
+.blog-category-filter .btn {
+  border-radius: 25px;
+  font-weight: 500;
+  padding: 8px 20px;
+  transition: all 0.3s ease;
+}
+
+.blog-category-filter .btn:hover {
+  transform: translateY(-2px);
+}
+
+.featured-post {
+  background: var(--light-grey);
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 4rem;
+}
+
+.featured-post .card-img-top {
+  border-radius: 10px;
+}
+
+.newsletter-section {
+  background: linear-gradient(135deg, var(--yellow) 0%, #f4c430 100%);
+  border-radius: 15px;
+  padding: 3rem 2rem;
+  margin: 4rem 0;
+}
+
+.newsletter-section h3 {
+  color: var(--bg-coffee);
+  font-weight: 600;
+}
+
+.newsletter-section .form-control {
+  border: none;
+  border-radius: 25px 0 0 25px;
+  padding: 12px 20px;
+}
+
+.newsletter-section .btn {
+  border-radius: 0 25px 25px 0;
+  padding: 12px 25px;
+  border: none;
+  background: var(--bg-coffee);
+  color: white;
+  font-weight: 600;
+}
+
+.newsletter-section .btn:hover {
+  background: var(--light-black);
+  color: white;
+}
+
+.blog-metadata {
+  font-size: 0.9rem;
+  color: var(--grey);
+}
+
+.blog-excerpt {
+  line-height: 1.6;
+  color: var(--grey);
+}
+
+.read-more-btn {
+  background: var(--yellow);
+  color: var(--bg-coffee);
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background: var(--bg-coffee);
+  color: var(--yellow);
+  transform: translateY(-2px);
+}
+
+.load-more-section {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.load-more-btn {
+  border: 2px solid var(--yellow);
+  color: var(--bg-coffee);
+  background: transparent;
+  padding: 12px 40px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.load-more-btn:hover {
+  background: var(--yellow);
+  color: var(--bg-coffee);
+  transform: translateY(-2px);
+}
+
+/* Blog Badge Styles */
+.blog-badge {
+  background: var(--yellow) !important;
+  color: var(--bg-coffee) !important;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+}
+
+/* Responsive Design for Blog */
+@media (max-width: 992px) {
+  .featured-post {
+    padding: 1.5rem;
+  }
+
+  .newsletter-section {
+    padding: 2rem 1.5rem;
+  }
+
+  .blog-hero {
+    padding-top: 130px;
+    padding-bottom: 60px;
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 768px) {
+  .featured-post {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .newsletter-section {
+    padding: 1.5rem 1rem;
+    margin: 2rem 0;
+  }
+
+  .newsletter-section .form-control {
+    border-radius: 25px;
+    margin-bottom: 1rem;
+  }
+
+  .newsletter-section .btn {
+    border-radius: 25px;
+    width: 100%;
+  }
+
+  .blog-category-filter .btn {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    padding: 6px 15px;
+  }
+}
+
+/* Animation for blog cards */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.blog-card {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Hover effects for interactive elements */
+.blog-category-filter .btn-warning:hover {
+  background: var(--bg-coffee) !important;
+  border-color: var(--bg-coffee) !important;
+  color: white !important;
+}
+
+.blog-category-filter .btn-outline-warning:hover {
+  background: var(--yellow) !important;
+  border-color: var(--yellow) !important;
+  color: var(--bg-coffee) !important;
+}
