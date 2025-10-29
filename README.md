@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+🍔 BurgerShop
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A clean, responsive burger shop landing site built with Create React App.
+Live demo → https://burgershopmomee.netlify.app/
 
-## Available Scripts
+<p align="center"> <a href="https://github.com/sayedamomi/BurgerShop/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/sayedamomi/BurgerShop?style=flat"></a> <a href="https://github.com/sayedamomi/BurgerShop/issues"><img alt="Issues" src="https://img.shields.io/github/issues/sayedamomi/BurgerShop"></a> <a href="https://github.com/sayedamomi/BurgerShop/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/badge/license-MIT-informational"></a> <img alt="Stack" src="https://img.shields.io/badge/stack-React%20%7C%20CRA%20%7C%20CSS-blue"> </p>
+✨ Features
 
-In the project directory, you can run:
+⚛️ React + CRA app structure for quick development and easy deployment. 
+GitHub
 
-### `npm start`
+📱 Responsive UI suitable for mobile and desktop.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🧭 Clean sections (Hero / Menu / About / Contact) — easy to extend.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🚀 One-command dev workflow with hot reload.
 
-### `npm test`
+Tech makeup (from GitHub language stats): JavaScript, CSS, HTML. 
+GitHub
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+🧪 Quick Start
+git clone https://github.com/sayedamomi/BurgerShop.git
+cd BurgerShop
+npm i
+npm start
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Dev server runs at http://localhost:3000/ with live reload. 
+GitHub
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+📦 Scripts
+Command	What it does
+npm start	Start dev server (hot reload). 
+GitHub
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+npm test	Run tests in watch mode. 
+GitHub
 
-### `npm run eject`
+npm run build	Production build to /build. 
+GitHub
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+npm run eject	Copy CRA configs (irreversible). 
+GitHub
+🗂️ Project Structure
+BurgerShop/
+├─ public/          # Static assets, index.html
+├─ src/             # React components, styles, assets
+├─ package.json     # Scripts & dependencies
+└─ README.md
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🌐 Deployment
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Netlify (live): https://burgershopmomee.netlify.app/
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Production build:
 
-## Learn More
+npm run build
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Upload /build to your host or connect the repo to Netlify for continuous deployment.
 
-### Code Splitting
+🛠 Tech Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Frontend: React (Create React App)
 
-### Analyzing the Bundle Size
+Styling: CSS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Tooling: Webpack/Babel via CRA
 
-### Making a Progressive Web App
+The repo currently contains the default CRA README & scripts. 
+GitHub
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+📸 Screenshots (optional)
 
-### Advanced Configuration
+Add screenshots to ./public/ and reference them here:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![Home](./public/screenshot-home.png)
+![Menu](./public/screenshot-menu.png)
 
-### Deployment
+🗺️ Roadmap Ideas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Add real menu data (JSON/API).
 
-### `npm run build` fails to minify
+“Add to Cart” interactions.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Dark mode toggle.
+
+Contact/booking form with validation.
+
+Accessibility audit & improvements.
+
+🤝 Contributing
+
+Contributions are welcome!
+
+Fork the repo
+
+Create a feature branch: git checkout -b feat/your-feature
+
+Commit: git commit -m "feat: add your feature"
+
+Push: git push origin feat/your-feature
+
+Open a Pull Request
+
+📄 License
+
+This project is open-source under the MIT license.
