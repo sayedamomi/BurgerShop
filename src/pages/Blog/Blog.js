@@ -107,8 +107,8 @@ const Blog = () => {
           <Row className="justify-content-center">
             <Col lg={7} className="text-center">
               <div className="hero_text text-white">
-                <h1 className="text-white">Food Blog</h1>
-                <h2 className="text-white">Stories, Recipes & More</h2>
+                <h1 className="text-white">Blog</h1>
+                <h2 className="text-white">Welcome to Momies kitchen</h2>
                 <p className="text-white fs-5">
                   Discover the latest culinary trends, behind-the-scenes
                   stories, and delicious recipes from our kitchen to yours.
